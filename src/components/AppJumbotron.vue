@@ -5,6 +5,8 @@ export default {
 </script>
 
 <template>
+
+<!-- ? Come minchia inserie le img????? -->
     <div class="jumbotron d-flex flex-column justify-content-center align-items-center">
         <div class="container-fluid">
             <div class="row">
@@ -26,6 +28,7 @@ export default {
 
     .jumbotron{
         height: 740px;
+        position: relative;
         background-color: lighten($tuliptree, 41%);
         .hand-write{
             font-size: 4rem;
