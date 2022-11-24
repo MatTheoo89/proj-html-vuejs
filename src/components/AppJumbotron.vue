@@ -30,10 +30,6 @@ export default {
         height: 740px;
         position: relative;
         background-color: lighten($tuliptree, 41%);
-        .hand-write{
-            font-size: 4rem;
-            color: $cerulean;
-        }
         button.my-color{
             padding: 15px 40px;
             background-color: $tuliptree;

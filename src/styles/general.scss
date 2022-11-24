@@ -5,6 +5,7 @@
 @import '../../node_modules/@fontsource/poppins/index.css';
 @import '../../node_modules/@fontsource/allura/index.css';
 @import '../../node_modules/@fontsource/poppins/600.css';
+@import '../../node_modules/@fontsource/poppins/700.css';
 
 // ! DEBUG
 
@@ -45,4 +46,6 @@ img{
 
 .hand-write{
     font-family: "Allura", cursive;
+    font-size: 4rem;
+    color: $cerulean;
 }
