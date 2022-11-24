@@ -11,7 +11,7 @@ export default {
             <p class="m-0 me-4">Start TOMORROW! Our biggest event of the year...</p>
             <i class="ms-2 me-3 fa-regular fa-clock"></i>
             <strong class="me-5">00 : 00 : 00 : 00</strong>
-            <button class="ms-3">Get ticket</button>
+            <button class="btn btn-primary my-btn ms-3">Get ticket</button>
         </div>
         
         <div class="header-bottom d-flex align-items-center">
@@ -68,15 +68,9 @@ export default {
             color: $boulder;
             font-size: .8rem;
         }
-        button{
-            font-size: .8rem;
-            font-weight: 600;
-            color: $white;
-            background-color: darken($tuliptree, 5%);
-            border-radius: 5px;
+        .my-btn{
             padding: 8px 35px;
-            border: none;
-            outline: none;
+            background-color: darken($tuliptree, 5%);
         }
     }
     .header-bottom{
