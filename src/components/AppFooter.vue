@@ -1,6 +1,16 @@
 <script>
+
+    import { getPathImage  } from '../data/fuction';
+    import { store } from '../data/store';
+
 export default {
-    name: 'AppFooter'
+    name: 'AppFooter',
+    data(){
+        return{
+            store,
+            getPathImage,
+        }
+    }
 }
 </script>
 
@@ -66,14 +76,8 @@ export default {
                         <div class="insta-image col-4 offset-1">
                                 <h4>Instagram <span>@maxcoach</span></h4>
                             <div class="gallery d-flex">
-                                <div class="image me-4">
-                                    <img src="../assets/img/120084500_197897808368764_8114555493043279565_n.jpg" alt="">
-                                </div>
-                                <div class="image me-4">
-                                    <img src="../assets/img/120084500_197897808368764_8114555493043279565_n.jpg" alt="">
-                                </div>
-                                <div class="image me-4">
-                                    <img src="../assets/img/120084500_197897808368764_8114555493043279565_n.jpg" alt="">
+                                <div v-for="(img, i) in store.imgFooter" :key="i" class="image me-4">
+                                    <img :src="getPathImage(img.path)" :alt="img.nameImg">
                                 </div>
                             </div>
                         </div>
