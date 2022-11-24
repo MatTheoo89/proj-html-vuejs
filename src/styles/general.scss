@@ -1,0 +1,14 @@
+@use './partials/variables' as *;
+
+@import '../../node_modules/bootstrap/scss/bootstrap.scss';
+@import '../../node_modules/@fortawesome/fontawesome-free/css/all.min.css';
+@import '../../node_modules/@fontsource/poppins/index.css';
+
+body{
+    font-family: $main-font;
+    background-color: #333;
+}
+
+img{
+    max-width: 100%;
+}
