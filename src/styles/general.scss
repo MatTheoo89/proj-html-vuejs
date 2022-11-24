@@ -6,9 +6,24 @@
 @import '../../node_modules/@fontsource/allura/index.css';
 @import '../../node_modules/@fontsource/poppins/600.css';
 
+// ! DEBUG
+
+.debug1{
+    background-color: rgba(255, 0, 0, .5);
+    border: 1px solid red;
+}
+.debug2{
+    background-color: rgba(0, 255, 0, .5);
+    border: 1px solid lightgreen;
+}
+.debug3{
+    background-color: rgba(0, 0, 255, .5);
+    border: 1px solid lightblue;
+}
+
 body{
     font-family: $main-font;
-    background-color: #333;
+    //background-color: #333;
 }
 
 img{

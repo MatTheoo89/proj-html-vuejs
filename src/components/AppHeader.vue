@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-    <header>
+    <header id="header">
         
         <div class="header-top d-flex justify-content-center align-items-center">
             <p class="m-0 me-4">Start TOMORROW! Our biggest event of the year...</p>
