@@ -58,7 +58,7 @@ export default {
 <!-- * Artist coaching Fine -->
 
 <!-- * Sezione 2 colonne inizio -->
-    <div class="container">
+    <div class="container pb-5">
         <div class="row">
             <div class="column-left col-5 p-4 text-center">
                 <img class="mb-4" src="../../assets/img/artist-quote-icon.png" alt="artist-quote-icon">
@@ -72,7 +72,19 @@ export default {
             </div>
         </div>
     </div>
+<!-- * Sezione 2 colonne fine -->
+
 <!-- * Sezione 2 colonne inizio -->
+<div class="container p-5">
+    <div class="row">
+        <div class="preview col text-center">
+            <img src="../../assets/img/artist-video-poster.jpg" alt="artist-video-poster">
+            <img class="play" src="../../assets/img/icon-youtube-play.png" alt="icon-youtube-play">
+        </div>
+    </div>
+</div>
+<!-- * Sezione 2 colonne fine -->
+
 
 
 
@@ -84,10 +96,6 @@ export default {
 
 <style lang="scss" scoped>
     @use '../../styles/partials/variables.scss' as *;
-
-    .col-3{
-        min-height: 100px;
-    }
 
     .my-card{
         .image{
@@ -120,5 +128,14 @@ export default {
         color: $tuliptree;
         padding: 15px 40px;
         background-color: lighten($tuliptree, 25%);
+    }
+    .preview{
+        position: relative;
+        .play{
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
     }
 </style>

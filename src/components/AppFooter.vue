@@ -55,21 +55,13 @@ export default {
                             <div class="menu">
                                 <h5>Explore</h5>
                                 <ul>
-                                    <li><a href="#">Start here</a></li>
-                                    <li><a href="#"></a>Success story</li>
-                                    <li><a href="#"></a>Blog</li>
-                                    <li><a href="#"></a>Courses</li>
-                                    <li><a href="#"></a>Contact Us</li>
+                                    <li v-for="(link, i) in store.menuFoot1" :key="i"><a :href="link.href">{{link.text}}</a></li>
                                 </ul>
                             </div>
                             <div class="menu">
                                 <h5>Information</h5>
                                 <ul>
-                                    <li><a href="#">Membership</a></li>
-                                    <li><a href="#"></a>Purchase guide</li>
-                                    <li><a href="#"></a>Privacy policy</li>
-                                    <li><a href="#"></a>Courses</li>
-                                    <li><a href="#"></a>Terms of services</li>
+                                    <li v-for="(link, i) in store.menuFoot2" :key="i"><a :href="link.href">{{link.text}}</a></li>
                                 </ul>
                             </div>
                         </div>

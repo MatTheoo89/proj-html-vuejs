@@ -1,6 +1,14 @@
 <script>
+
+    import { store } from '../data/store';
+
 export default {
-    name: 'AppHeader'
+    name: 'AppHeader',
+    data(){
+        return{
+            store,
+        }
+    },
 }
 </script>
 
@@ -25,24 +33,10 @@ export default {
                         </div>
                         <div class="navbar d-flex justify-content-center col-8 h-100">
                             <ul class="m-0 d-flex justify-content-center align-items-center list-unstyled">
-                                <li class="p-4">
-                                    <a class="text-decoration-none" href="#">home<i class="fa-solid fa-chevron-down"></i></a>
+                                <li v-for="(link, i) in store.menuHead" :key="i"
+                                    class="p-4">
+                                    <a class="text-decoration-none" :href="link.href">{{link.text}}<i class="fa-solid fa-chevron-down"></i></a>
                                 </li> 
-                                <li class="p-4">
-                                    <a class="text-decoration-none" href="#">Pages<i class="fa-solid fa-chevron-down"></i></a>
-                                </li> 
-                                <li class="p-4">
-                                    <a class="text-decoration-none" href="#">Courses<i class="fa-solid fa-chevron-down"></i></a>
-                                </li> 
-                                <li class="p-4">
-                                    <a class="text-decoration-none" href="#">Features<i class="fa-solid fa-chevron-down"></i></a>
-                                </li> 
-                                <li class="p-4">
-                                    <a class="text-decoration-none" href="#">Blog<i class="fa-solid fa-chevron-down"></i></a>
-                                </li> 
-                                <li class="p-4">
-                                    <a class="text-decoration-none" href="#">Shop<i class="fa-solid fa-chevron-down"></i></a>
-                                </li>
                             </ul>
                         </div>
                         <div class="socials col-2 h-100 d-flex justify-content-end align-items-center">

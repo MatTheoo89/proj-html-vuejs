@@ -2,6 +2,87 @@ import { reactive } from "vue";
 
 export const store = reactive({
 
+    menuHead:[
+        {
+            text: 'Home',
+            href: '#',
+            active: false,
+        },
+        {
+            text: 'Pages',
+            href: '#',
+            active: false,
+        },
+        {
+            text: 'Courses',
+            href: '#',
+            active: false,
+        },
+        {
+            text: 'Features',
+            href: '#',
+            active: false,
+        },
+        {
+            text: 'Blog',
+            href: '#',
+            active: false,
+        },
+        {
+            text: 'Shop',
+            href: '#',
+            active: false,
+        },
+    ],
+    menuFoot1:[
+        {
+            text: 'Start here',
+            href: '#',
+        },
+        {
+            text: 'Success ',
+            href: '#',
+        },
+        {
+            text: 'story',
+            href: '#',
+        },
+        {
+            text: 'Blog',
+            href: '#',
+        },
+        {
+            text: 'Courses',
+            href: '#',
+        },
+        {
+            text: 'Contact Us',
+            href: '#',
+        },
+    ],
+    menuFoot2:[
+        {
+            text: 'Membership',
+            href: '#',
+        },
+        {
+            text: 'Purchase guide',
+            href: '#',
+        },
+        {
+            text: 'Privacy policy',
+            href: '#',
+        },
+        {
+            text: 'Courses',
+            href: '#',
+        },
+        {
+            text: 'Terms of services',
+            href: '#',
+        },
+    ],
+
     imgFooter:[
             {
                 nameImg: 'image1',
