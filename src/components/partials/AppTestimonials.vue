@@ -1,6 +1,9 @@
 <script>
 export default {
-    name: 'AppTestimonials'
+    name: 'AppTestimonials',
+    props: {
+        titleTestimonials: String,
+    },
 }
 </script>
 
@@ -12,7 +15,7 @@ export default {
         <div class="row text-center">
             <div class="col mb-4">
                 <h2 class="hand-write">Testimonials</h2>
-                <h2 class="subtitle">Why do people love me?</h2>
+                <h2 class="subtitle">{{titleTestimonials}}</h2>
             </div>
         </div>
         <!-- intestazione FINE -->

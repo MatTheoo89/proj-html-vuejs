@@ -11,9 +11,9 @@ export default {
 
 <template>
     <main>
-        <AppArtistCoaching />
-        <AppLatestCourses />
-        <AppArticlegAndTips />
+        <AppArtistCoaching title1="I understand what it takes to create." title2="I can help you with" titleTestimonials="Why do people love me?"/>
+        <AppLatestCourses title="Latest Online Courses"/>
+        <AppArticlegAndTips title="Latest From The Blog"/>
         <AppUpcomingEvents />
     </main>
 </template>

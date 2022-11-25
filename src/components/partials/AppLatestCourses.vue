@@ -5,6 +5,9 @@
 
 export default {
     name: 'AppLatestCourses',
+    props: {
+        title: String,
+    },
     data(){
         return{
             store,
@@ -22,7 +25,7 @@ export default {
         <div class="row text-center">
             <div class="col mb-4">
                 <h2 class="hand-write">Artist coaching</h2>
-                <h2 class="subtitle">Latest Online Courses</h2>
+                <h2 class="subtitle">{{title}}</h2>
             </div>
         </div>
         <!-- intestazione FINE -->

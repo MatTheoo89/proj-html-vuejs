@@ -2,7 +2,12 @@
 import AppTestimonials from './AppTestimonials.vue'
 export default {
     components: { AppTestimonials },
-    name: 'AppArtistCoaching'
+    name: 'AppArtistCoaching',
+    props:{
+        title1: String,
+        title2: String,
+        titleTestimonials: String,
+    },
 }
 </script>
 
@@ -12,8 +17,8 @@ export default {
         <div class="row text-center">
             <div class="col mb-4">
                 <h2 class="hand-write">Artist coaching</h2>
-                <h2 class="subtitle">I understand what it takes to create.</h2>
-                <h2 class="subtitle">I can help you with</h2>
+                <h2 class="subtitle">{{title1}}</h2>
+                <h2 class="subtitle">{{title2}}</h2>
             </div>
         </div>
         <div class="row d-flex align-items-center">
@@ -85,13 +90,7 @@ export default {
 </div>
 <!-- * Sezione 2 colonne fine -->
 
-
-
-
-
-
-
-    <AppTestimonials />
+    <AppTestimonials titleTestimonials="Why do people love me?"/>
 </template>
 
 <style lang="scss" scoped>
