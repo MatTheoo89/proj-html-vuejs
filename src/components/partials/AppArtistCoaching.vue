@@ -12,8 +12,8 @@ export default {
         <div class="row text-center">
             <div class="col mb-4">
                 <h2 class="hand-write">Artist coaching</h2>
-                <h2>I understand what it takes to create.</h2>
-                <h2>I can help you with</h2>
+                <h2 class="subtitle">I understand what it takes to create.</h2>
+                <h2 class="subtitle">I can help you with</h2>
             </div>
         </div>
         <div class="row d-flex align-items-center">
@@ -75,10 +75,10 @@ export default {
 <!-- * Sezione 2 colonne fine -->
 
 <!-- * Sezione 2 colonne inizio -->
-<div class="container p-5">
+<div class="video-yt container p-5">
     <div class="row">
         <div class="preview col text-center">
-            <img src="../../assets/img/artist-video-poster.jpg" alt="artist-video-poster">
+            <img class="videos" src="../../assets/img/artist-video-poster.jpg" alt="artist-video-poster">
             <img class="play" src="../../assets/img/icon-youtube-play.png" alt="icon-youtube-play">
         </div>
     </div>
@@ -129,13 +129,24 @@ export default {
         padding: 15px 40px;
         background-color: lighten($tuliptree, 25%);
     }
-    .preview{
+    .video-yt{
+        z-index: 10;
         position: relative;
-        .play{
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
+        margin-bottom: 90px;
+        .preview{
+            position: relative;
+                .videos{
+                box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
+                }
+                .play{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
         }
+        }
+        
     }
+    
+    
 </style>

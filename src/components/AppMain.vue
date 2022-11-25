@@ -21,7 +21,7 @@ export default {
 <style lang="scss" scoped>
 @use '../styles/partials/variables.scss' as *;
     main{
-        background-color: rgb(95, 95, 95);
+        //background-color: rgb(95, 95, 95);
         min-height: 400px;
     }
 </style>
