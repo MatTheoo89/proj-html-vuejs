@@ -92,6 +92,32 @@ export const store = reactive({
             students:'50',
         },
     ],
+    events:[
+        {
+            img:'artist-event-04-250x300.jpg',
+            date:'NOV 22, 2020',
+            name: 'Storytelling Workshop',
+            city: 'Texas, Us',
+        },
+        {
+            img:'artist-event-03-250x300.jpg',
+            date:'OCT 10, 2020',
+            name: 'Painting Art Contest 2020',
+            city: 'New York, US',
+        },
+        {
+            img:'artist-event-02-250x300.jpg',
+            date:'NOV 23, 2020',
+            name: 'International Art Fair 2020',
+            city: 'Hamburg, Germany',
+        },
+        {
+            img:'artist-event-01-250x300.jpg',
+            date:'DEC 15, 2020',
+            name: 'Street Performance : Call for Artist',
+            city: 'Lilinois, US',
+        },
+    ],
     menuFoot1:[
         {
             text: 'Start here',

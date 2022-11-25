@@ -77,7 +77,7 @@ export default {
     .title-lateral{
         // stroke: 20px red;
         writing-mode: sideways-rl;
-        font-size: 8rem;
+        font-size: 10rem;
         font-weight: 600;
         margin: 0;
         text-align: center;
