@@ -12,8 +12,10 @@ export default {
 </script>
 
 <template>
+
+<section>
 <!-- * Artist coaching inizio -->
-    <div class="container pt-5">
+    <div class="artist container">
         <div class="row text-center">
             <div class="col mb-4">
                 <h2 class="hand-write">Artist coaching</h2>
@@ -87,14 +89,25 @@ export default {
             <img class="play" src="../../assets/img/icon-youtube-play.png" alt="icon-youtube-play">
         </div>
     </div>
+
+    <!-- BACK ABSOLUTE -->
+    <img class="maxcoach-shape-05" src="../../assets/img/maxcoach-shape-05.png" alt="maxcoach-shape-05">
 </div>
 <!-- * Sezione 2 colonne fine -->
 
     <AppTestimonials titleTestimonials="Why do people love me?"/>
+
+    <!-- IMMAGINI BACK -->
+    <img class="artist-shape-01" src="../../assets/img/artist-shape-01.png" alt="artist-shape-01">
+    <img class="maxcoach-shape-03" src="../../assets/img/maxcoach-shape-03.png" alt="maxcoach-shape-03">
+    <img class="maxcoach-shape-13" src="../../assets/img/maxcoach-shape-13.png" alt="maxcoach-shape-13">
+    <img class="maxcoach-shape-12" src="../../assets/img/maxcoach-shape-12.png" alt="maxcoach-shape-12">
+</section>
 </template>
 
 <style lang="scss" scoped>
     @use '../../styles/partials/variables.scss' as *;
+
 
     .my-card{
         .image{
@@ -134,6 +147,7 @@ export default {
         margin-bottom: 90px;
         .preview{
             position: relative;
+            z-index: 10;
                 .videos{
                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
                 }
@@ -144,8 +158,51 @@ export default {
                 transform: translate(-50%, -50%);
         }
         }
-        
+        .maxcoach-shape-05{
+            z-index: 1;
+            position: absolute;
+            top: 1%;
+            left: 11%;
+        }
     }
-    
+    section{
+        position: relative;
+        margin-bottom: 80px;
+        padding-top: 30px;
+        .artist{
+        padding-top: 90px;
+        margin-bottom: 160px;
+        z-index: 99;
+        position: relative;
+    }
+        .artist-shape-01{
+            z-index: 1;
+            position: absolute;
+            top: 2%;
+            left: -3%;
+            transform: rotate(235deg);
+        }
+        .maxcoach-shape-03{
+            z-index: 2;
+            position: absolute;
+            left: 0;
+            top: 3%;
+            opacity: .2;
+            width: 100%;
+            transform: rotate(-5deg);
+        }
+        .maxcoach-shape-13{
+            z-index: 2;
+            position: absolute;
+            right: -2%;
+            top: 12%;
+        }
+        .maxcoach-shape-12{
+            z-index: 1;
+            position: absolute;
+            top: 75%;
+            right: 18%;
+        }
+    }
     
 </style>
