@@ -66,7 +66,7 @@ export default {
 <style lang="scss" scoped>
     @use '../../styles/partials/variables.scss' as *;
 
-    .my-card:nth-child(3n+4), .my-card:nth-child(3n){
+    .my-card:nth-child(4n+3), .my-card:nth-child(4n+4){
         flex-direction: row-reverse;
         text-align: end;
         // background-color: red;
