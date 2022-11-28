@@ -118,6 +118,36 @@ export const store = reactive({
             city: 'Lilinois, US',
         },
     ],
+    testimonials:[
+        {
+            title:'it\'s a choice of quality for people with special needs',
+            quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!',
+            image:'artist-testimonial-avatar-02.jpg',
+            name:'Florence Themes',
+            professional:'Multimedia Admin'
+        },
+        {
+            title:'High level efficienty and scientific teaching methods',
+            quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!',
+            image:'artist-testimonial-avatar-04.jpg',
+            name:'Mina Hollance',
+            professional:'Frelancer'
+        },
+        {
+            title:'Professional team of specialists and passionate mentors at reach',
+            quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!',
+            image:'artist-testimonial-avatar-01.jpg',
+            name:'Madley Pondor',
+            professional:'It Specialis'
+        },
+        {
+            title:'I\'m Batman',
+            quote: 'It\'s not so much who you are, as what you do, that qualifies you.',
+            image:'artist-testimonial-avatar-03.jpg',
+            name:'Bruce Wayne',
+            professional:'Multi-Millionaire'
+        },
+    ],
     menuFoot1:[
         {
             text: 'Start here',

@@ -1,5 +1,8 @@
 <script>
 
+    import { store } from '../../data/store';
+    import { getPathImage } from '../../data/fuction';
+
     // Import Swiper Vue.js components
     import { Swiper, SwiperSlide } from "swiper/vue";
 
@@ -14,6 +17,12 @@ import { EffectCoverflow, Pagination } from "swiper";
 
 export default {
     name: 'AppTestimonials',
+    data(){
+        return{
+            store,
+            getPathImage,
+        }
+    },
     components: {
     Swiper,
     SwiperSlide,
@@ -32,7 +41,7 @@ export default {
 <template>
 <section class="testimonials">
 
-    <div class="container-fluid text-center py-3">
+    <div class="container-fluid text-center">
                 <!-- intestazione INIZIO -->
         <div class="row text-center">
             <div class="col mb-4">
@@ -42,14 +51,14 @@ export default {
         </div>
         <!-- intestazione FINE -->
 
-        <div class="row testimonials">
+        <div class="row testimonials overflow-hidden">
             <div class="col d-flex justify-content-center align-items-center">
                 <swiper
                     :effect="'coverflow'"
                     :grabCursor="true"
                     :centeredSlides="true"
                     :slidesPerView="3"
-                    :space-between="60"
+                    :space-between="250"
                     :coverflowEffect="{
                         rotate: 0,
                         stretch: 0,
@@ -61,65 +70,17 @@ export default {
                     :modules="modules"
                     class="mySwiper"
                 >
-                    <swiper-slide>
-                        <div class="testimonials-card">
+                    <swiper-slide v-for="(card, i) in store.testimonials" :key="i">
+                        <div class="testimonials-card d-flex flex-column justify-content-between">
                             <div class="testimonials-dettails">
-                                <h4>TITOLO CARD</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!</p>
+                                <h4>{{card.title}} </h4>
+                                <p>{{card.quote}}</p>
                             </div>
                             <div class="testimonials-avatar d-flex align-items-center">
-                                <img class="avatar" src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
+                                <img class="avatar" :src="getPathImage(card.image)" :alt="card.name">
                                 <div class="testimonials-info">
-                                    <h5>NOME E COGNOME</h5>
-                                    <span>PROFESSIONE</span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonials-card">
-                            <div class="testimonials-dettails">
-                                <h4>TITOLO CARD</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!</p>
-                            </div>
-                            <div class="testimonials-avatar d-flex align-items-center">
-                                <img class="avatar" src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                                <div class="testimonials-info">
-                                    <h5>NOME E COGNOME</h5>
-                                    <span>PROFESSIONE</span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonials-card">
-                            <div class="testimonials-dettails">
-                                <h4>TITOLO CARD</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!</p>
-                            </div>
-                            <div class="testimonials-avatar d-flex align-items-center">
-                                <img class="avatar" src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                                <div class="testimonials-info">
-                                    <h5>NOME E COGNOME</h5>
-                                    <span>PROFESSIONE</span>
-                                </div>
-                                
-                            </div>
-                        </div>
-                    </swiper-slide>
-                    <swiper-slide>
-                        <div class="testimonials-card">
-                            <div class="testimonials-dettails">
-                                <h4>TITOLO CARD</h4>
-                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aspernatur saepe laborum esse perferendis ut sint suscipit doloremque reiciendis rem incidunt!</p>
-                            </div>
-                            <div class="testimonials-avatar d-flex align-items-center">
-                                <img class="avatar" src="../../assets/img/artist-testimonial-avatar-04.jpg" alt="">
-                                <div class="testimonials-info">
-                                    <h5>NOME E COGNOME</h5>
-                                    <span>PROFESSIONE</span>
+                                    <h5>{{card.name}}</h5>
+                                    <span>{{card.professional}}</span>
                                 </div>
                                 
                             </div>
@@ -140,6 +101,7 @@ export default {
 
     section{
         background-color: $hintofred;
+        padding-bottom: 30px;
         position: relative;
         .container-fluid{
             min-height: 100px;
@@ -161,21 +123,22 @@ export default {
             .col{
                 margin: 0 50px;
                 .swiper{
-                    height: 90%;
-                }
-            }
+                    height: 90%;               
+            
             .swiper-wrapper{
                 margin-bottom: 75px;
                 height: 90%;
                 .swiper-slide{
                 width: calc(100% / 3);
+                height: 90%;
                 // overflow: hidden;
                 }
                 .swiper-slide-prev, .swiper-slide-next{
                     opacity: .5;
                 }
             }
-            
+
+            }
         }
         .testimonials-card{
             width: 90%;
@@ -213,5 +176,5 @@ export default {
             }
         }
     }
-    
+    }
 </style>

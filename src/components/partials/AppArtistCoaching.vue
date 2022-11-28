@@ -141,8 +141,8 @@ export default {
         background-color: lighten($tuliptree, 25%);
     }
     .video-yt{
+        z-index: 99;
         position: relative;
-        margin-bottom: 90px;
         .preview{
             position: relative;
             z-index: 10;
@@ -156,6 +156,7 @@ export default {
                 left: 50%;
                 transform: translate(-50%, -50%);
         }
+        }
         .maxcoach-shape-05{
             z-index: 1;
             position: absolute;
@@ -165,9 +166,8 @@ export default {
         .maxcoach-shape-12{
             z-index: 1;
             position: absolute;
-            right: 81px;
-            bottom: 2%;
-        }
+            right: 4%;
+            bottom: 6%;
         }
     }
     section{
@@ -193,13 +193,13 @@ export default {
             left: 0;
             top: 3%;
             opacity: .2;
-            width: 100%;
+            width: 99%;
             transform: rotate(-5deg);
         }
         .maxcoach-shape-13{
             z-index: 2;
             position: absolute;
-            right: -2%;
+            right: 2%;
             top: 12%;
         }
     }
