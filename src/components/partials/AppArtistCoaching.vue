@@ -89,9 +89,9 @@ export default {
             <img class="play" src="../../assets/img/icon-youtube-play.png" alt="icon-youtube-play">
         </div>
     </div>
-
     <!-- BACK ABSOLUTE -->
-    <img class="maxcoach-shape-05" src="../../assets/img/maxcoach-shape-05.png" alt="maxcoach-shape-05">
+            <img class="maxcoach-shape-05" src="../../assets/img/maxcoach-shape-05.png" alt="maxcoach-shape-05">
+            <img class="maxcoach-shape-12" src="../../assets/img/maxcoach-shape-12.png" alt="maxcoach-shape-12">
 </div>
 <!-- * Sezione 2 colonne fine -->
 
@@ -101,7 +101,6 @@ export default {
     <img class="artist-shape-01" src="../../assets/img/artist-shape-01.png" alt="artist-shape-01">
     <img class="maxcoach-shape-03" src="../../assets/img/maxcoach-shape-03.png" alt="maxcoach-shape-03">
     <img class="maxcoach-shape-13" src="../../assets/img/maxcoach-shape-13.png" alt="maxcoach-shape-13">
-    <img class="maxcoach-shape-12" src="../../assets/img/maxcoach-shape-12.png" alt="maxcoach-shape-12">
 </section>
 </template>
 
@@ -142,7 +141,6 @@ export default {
         background-color: lighten($tuliptree, 25%);
     }
     .video-yt{
-        z-index: 10;
         position: relative;
         margin-bottom: 90px;
         .preview{
@@ -152,17 +150,24 @@ export default {
                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
                 }
                 .play{
+                    z-index: 11;
                 position: absolute;
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
         }
-        }
         .maxcoach-shape-05{
             z-index: 1;
             position: absolute;
-            top: 1%;
-            left: 11%;
+            top: 0;
+            left: 9%;
+        }
+        .maxcoach-shape-12{
+            z-index: 1;
+            position: absolute;
+            right: 81px;
+            bottom: 2%;
+        }
         }
     }
     section{
@@ -196,12 +201,6 @@ export default {
             position: absolute;
             right: -2%;
             top: 12%;
-        }
-        .maxcoach-shape-12{
-            z-index: 1;
-            position: absolute;
-            top: 75%;
-            right: 22%;
         }
     }
     
