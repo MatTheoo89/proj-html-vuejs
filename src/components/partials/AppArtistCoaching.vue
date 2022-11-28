@@ -146,6 +146,17 @@ export default {
         .preview{
             position: relative;
             z-index: 10;
+            &::before{
+                content: "";
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                display: inline-block;
+                position: absolute;
+                right: 5%;
+                top: 22%;
+                border: 8px solid lighten($tuliptree, 18%);
+            }
                 .videos{
                 box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.2);
                 }

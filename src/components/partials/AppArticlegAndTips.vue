@@ -79,6 +79,10 @@ export default {
 
         <!-- Piè di pagina -->
         <h6>Get into details now? <a href="#">View all posts</a></h6>
+
+
+        <!-- !BACK IMG -->
+    <img class="maxcoach-shape-03" src="../../assets/img/maxcoach-shape-03.png" alt="maxcoach-shape-03">
     </section>
         
 </template>
@@ -89,6 +93,26 @@ export default {
     .ArticlegAndTips{
         position: relative;
         background-color: lighten($hintofred, 3%);
+        .maxcoach-shape-03{
+            z-index: 1;
+            position: absolute;
+            left: 0;
+            top: 44%;
+            opacity: .5;
+            width: 99%;
+            transform: rotate(-5deg);
+        }
+        &::before{
+                content: "";
+                width: 90px;
+                height: 90px;
+                border-radius: 50%;
+                display: inline-block;
+                position: absolute;
+                left: 15%;
+                top: 25%;
+                border: 8px solid lighten($tuliptree, 18%);
+            }
         h6{
             color: $boulder;
             font-weight: 600;
@@ -110,10 +134,10 @@ export default {
             padding: 80px 0;
             width: 500px;
             color: $white;
-            z-index: 1;
+            z-index: 2;
             margin: 0 80px;
             .shadow{
-                z-index: 2;
+                z-index: 3;
                 position: absolute;
                 top: 80px; // padding della carda
                 left: 0;
@@ -123,7 +147,7 @@ export default {
                 background: linear-gradient(0deg, rgba(0,0,0,0.4) 0%, rgba(0,0,0,.1) 100%);
             }
             .info-box{
-                z-index: 3;
+                z-index: 4;
                 position: absolute;
                 bottom: 10%;
                 left: 0;
@@ -160,6 +184,7 @@ export default {
         }
         .card-mini{
             position: absolute;
+            z-index: 2;
             width: 280px;
             //min-height: 300px;
             background-color: $white;

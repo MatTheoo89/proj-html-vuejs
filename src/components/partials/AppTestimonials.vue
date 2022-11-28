@@ -146,7 +146,7 @@ export default {
             padding: 50px;
             border-radius: 8px;
             text-align: start;
-            background-color: bisque;
+            background-color: $white;
             .testimonials-dettails{
                 margin-bottom: 35px;
                 padding-right: 40px;
