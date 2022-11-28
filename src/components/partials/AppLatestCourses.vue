@@ -95,7 +95,7 @@ export default {
             border: 2px solid $tuliptree;
             position: absolute;
             bottom: 35px;
-            width: 80%;
+            width: 320px;
             background-color: white;
             padding: 15px;
             box-shadow: 2px 2px 5px rgba(0, 0, 0, .2);

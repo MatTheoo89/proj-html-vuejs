@@ -201,7 +201,7 @@ export default {
             z-index: 1;
             position: absolute;
             top: 75%;
-            right: 18%;
+            right: 22%;
         }
     }
     

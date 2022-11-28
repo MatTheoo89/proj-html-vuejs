@@ -53,3 +53,8 @@ img{
 .subtitle{
     font-weight: 600;
 }
+
+button.btn:hover{
+    background-color: $icecold;
+    color: $white;
+}

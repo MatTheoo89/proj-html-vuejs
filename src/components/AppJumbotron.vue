@@ -58,9 +58,13 @@ export default {
         .jumbo-text-center{
             z-index: 99;
         }
-        button.my-color{
+        .btn.my-color{
             padding: 15px 40px;
             background-color: $tuliptree;
+        }
+        .btn.my-color:hover{
+            background-color: $icecold;
+            color: $white;
         }
         h1{
             font-weight: 600;

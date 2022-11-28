@@ -65,7 +65,12 @@ export default {
         .my-btn{
             padding: 8px 35px;
             background-color: darken($tuliptree, 5%);
+            &:hover{
+            background-color: $icecold;
+            color: $white;
         }
+        }
+
     }
     .header-bottom{
         height: 90px;
